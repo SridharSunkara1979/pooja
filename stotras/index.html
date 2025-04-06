@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stotras - Hindu Devotional App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to common CSS -->
+</head>
+<body>
+
+    <!-- Top Navigation Bar (Copied from index.html for consistency) -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../images/om.png" alt="Om Symbol">
+            Hindu App
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStotras" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Stotras <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownStotras">
+                        <a class="dropdown-item" href="#ganesha">Ganesha Stotras</a>
+                        <a class="dropdown-item" href="#lakshmi">Lakshmi Devi Stotras</a>
+                        <a class="dropdown-item" href="#saraswati">Saraswati Devi Stotras</a>
+                        <a class="dropdown-item" href="#durga">Durga / Devi Stotras</a>
+                        <a class="dropdown-item" href="#shiva">Shiva Stotras</a>
+                        <a class="dropdown-item" href="#vishnu">Vishnu / Krishna Stotras</a>
+                        <a class="dropdown-item" href="#narasimha">Narasimha Stotras</a>
+                        <a class="dropdown-item" href="#subrahmanya">Subrahmanya Stotras</a>
+                        <a class="dropdown-item" href="#hanuman">Hanuman Stotras</a>
+                        <a class="dropdown-item" href="#surya">Surya Stotras</a>
+                        <a class="dropdown-item" href="#other">Other Stotras</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../vratam/index.html" id="navbarDropdownVratam" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vratam
+                    </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownVratam">
+                        <a class="dropdown-item" href="../vratam/index.html#vinayaka">Vinayaka Chavithi</a>
+                        <a class="dropdown-item" href="../vratam/index.html#varalakshmi">Varalakshmi Vratam</a>
+                        <!-- Add other Vratam links -->
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../harathi/index.html" id="navbarDropdownHarathi" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Harathi
+                    </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownHarathi">
+                        <a class="dropdown-item" href="../harathi/index.html#ganesha">Sri Ganesha Harathi</a>
+                        <a class="dropdown-item" href="../harathi/index.html#lakshmi">Sri Lakshmi Devi Harathi</a>
+                         <!-- Add other Harathi links -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container">
+        <h1>Stotras</h1>
+        <p>Select a category to view Stotras.</p>
+
+        <!-- Accordion for Stotra Categories -->
+        <div id="stotraAccordion">
+
+            <!-- Ganesha Stotras -->
+            <div class="card" id="ganesha">
+                <div class="card-header" id="headingGanesha">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGanesha" aria-expanded="true" aria-controls="collapseGanesha">
+                            🕉️ Ganesha Stotras
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseGanesha" class="collapse show" aria-labelledby="headingGanesha" data-parent="#stotraAccordion">
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="ganesha/ganesha_pancharatnam.html">Ganesha Pancharatnam</a></li>
+                            <li><a href="ganesha/ganesha_stotram.html">Ganesha Stotram (Vakratunda Mahakaya)</a></li>
+                            <li><a href="ganesha/sankata_nashana.html">Sankata Nashana Ganesha Stotram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lakshmi Devi Stotras -->
+            <div class="card" id="lakshmi">
+                 <div class="card-header" id="headingLakshmi">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseLakshmi" aria-expanded="false" aria-controls="collapseLakshmi">
+                           🌺 Lakshmi Devi Stotras
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseLakshmi" class="collapse" aria-labelledby="headingLakshmi" data-parent="#stotraAccordion">
+                    <div class="card-body">
+                        <!-- Add links to individual Lakshmi stotras here -->
+                        Placeholder for Lakshmi Devi Stotras list.
+                    </div>
+                </div>
+            </div>
+
+             <!-- Saraswati Devi Stotras -->
+            <div class="card" id="saraswati">
+                 <div class="card-header" id="headingSaraswati">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSaraswati" aria-expanded="false" aria-controls="collapseSaraswati">
+                           🕉️ Saraswati Devi Stotras
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSaraswati" class="collapse" aria-labelledby="headingSaraswati" data-parent="#stotraAccordion">
+                    <div class="card-body">
+                        Placeholder for Saraswati Devi Stotras list.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add other categories similarly -->
+             <div class="card" id="durga">
+                 <div class="card-header" id="headingDurga">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseDurga" aria-expanded="false" aria-controls="collapseDurga">
+                           🔱 Durga / Devi Stotras
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseDurga" class="collapse" aria-labelledby="headingDurga" data-parent="#stotraAccordion">
+                    <div class="card-body">
+                        Placeholder for Durga / Devi Stotras list.
+                    </div>
+                </div>
+            </div>
+             <div class="card" id="shiva">
+                 <div class="card-header" id="headingShiva">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseShiva" aria-expanded="false" aria-controls="collapseShiva">
+                           🕉️ Shiva Stotras
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseShiva" class="collapse" aria-labelledby="headingShiva" data-parent="#stotraAccordion">
+                    <div class="card-body">
+                        Placeholder for Shiva Stotras list.
+                    </div>
+                </div>
+            </div>
+             <div class="card" id="vishnu">
+                 <div class="card-header" id="headingVishnu">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseVishnu" aria-expanded="false" aria-controls="collapseVishnu">
+                           🦚 Vishnu / Krishna Stotras
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseVishnu" class="collapse" aria-labelledby="headingVishnu" data-parent="#stotraAccordion">
+                    <div class="card-body">
+                        Placeholder for Vishnu / Krishna Stotras list.
+                    </div>
+                </div>
+            </div>
+             <div class="card" id="narasimha">
+                 <div class="card-header" id="headingNarasimha">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNarasimha" aria-expanded="false" aria-controls="collapseNarasimha">
+                           🦁 Narasimha Stotras
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseNarasimha" class="collapse" aria-labelledby="headingNarasimha" data-parent="#stotraAccordion">
+                    <div class="card-body">
+                        Placeholder for Narasimha Stotras list.
+                    </div>
+                </div>
+            </div>
+             <div class="card" id="subrahmanya">
+                 <div class="card-header" id="headingSubrahmanya">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSubrahmanya" aria-expanded="false" aria-controls="collapseSubrahmanya">
+                           🔱 Subrahmanya Stotras
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSubrahmanya" class="collapse" aria-labelledby="headingSubrahmanya" data-parent="#stotraAccordion">
+                    <div class="card-body">
+                        Placeholder for Subrahmanya Stotras list.
+                    </div>
+                </div>
+            </div>
+             <div class="card" id="hanuman">
+                 <div class="card-header" id="headingHanuman">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseHanuman" aria-expanded="false" aria-controls="collapseHanuman">
+                           🐒 Hanuman Stotras
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseHanuman" class="collapse" aria-labelledby="headingHanuman" data-parent="#stotraAccordion">
+                    <div class="card-body">
+                        Placeholder for Hanuman Stotras list.
+                    </div>
+                </div>
+            </div>
+             <div class="card" id="surya">
+                 <div class="card-header" id="headingSurya">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSurya" aria-expanded="false" aria-controls="collapseSurya">
+                           🌞 Surya Stotras
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSurya" class="collapse" aria-labelledby="headingSurya" data-parent="#stotraAccordion">
+                    <div class="card-body">
+                        Placeholder for Surya Stotras list.
+                    </div>
+                </div>
+            </div>
+             <div class="card" id="other">
+                 <div class="card-header" id="headingOther">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOther" aria-expanded="false" aria-controls="collapseOther">
+                           🔯 Other Stotras
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOther" class="collapse" aria-labelledby="headingOther" data-parent="#stotraAccordion">
+                    <div class="card-body">
+                        Placeholder for Other Stotras list.
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End Accordion -->
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script> <!-- Link to common JS -->
+</body>
+</html>

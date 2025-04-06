@@ -1,0 +1,123 @@
+/* Drik Panchang Inspired Theme */
+body {
+    background: url('../images/background.jpg') no-repeat center center fixed; /* Keep the background image */
+    background-size: cover;
+    color: #333; /* Darker text for readability */
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding-top: 65px; /* Adjusted for slightly taller navbar */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 248, 220, 0.8); /* Light cream/yellow overlay */
+    z-index: -1;
+}
+
+.navbar {
+    background-color: #FF9933; /* Saffron/Orange navbar */
+    border-bottom: 1px solid #E67E22; /* Darker orange border */
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.navbar-brand, .nav-link {
+    color: #4A2C00 !important; /* Dark brown text on navbar */
+    font-weight: 500;
+}
+.navbar-brand:hover, .nav-link:hover {
+    color: #000 !important; /* Black on hover */
+}
+
+.navbar-brand img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    border-color: rgba(74, 44, 0, 0.5); /* Dark brown border for toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(74, 44, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Dark brown icon */
+}
+
+.dropdown-menu {
+    background-color: #FFF8DC; /* Cornsilk background for dropdown */
+    border: 1px solid #FF9933;
+}
+
+.dropdown-item {
+    color: #4A2C00; /* Dark brown text */
+}
+
+.dropdown-item:hover {
+    background-color: #FF9933; /* Saffron/Orange on hover */
+    color: #fff; /* White text on hover */
+}
+
+.container {
+     background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white background for content */
+     padding: 25px;
+     border-radius: 8px;
+     margin-top: 25px;
+     margin-bottom: 25px;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+     border: 1px solid #eee;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #D35400; /* Orange heading color */
+}
+
+/* Accordion Styles */
+.card {
+    margin-bottom: 10px;
+    border: 1px solid #FFDAB9; /* PeachPuff border */
+}
+.card-header {
+    background-color: #FFE4B5; /* Moccasin header */
+    padding: 0.5rem 1rem;
+}
+.card-header .btn-link {
+    color: #8B4513; /* SaddleBrown link color */
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+.card-header .btn-link:hover {
+    color: #D35400; /* Orange on hover */
+}
+.card-body {
+    background-color: #FFF8DC; /* Cornsilk body */
+}
+.card-body ul {
+    list-style: none;
+    padding-left: 0;
+}
+.card-body li a {
+    color: #0056b3; /* Standard blue link color */
+    text-decoration: none;
+}
+.card-body li a:hover {
+    text-decoration: underline;
+    color: #D35400;
+}
+
+/* List Group Styles (for Vratam/Harathi) */
+.list-group-item {
+    background-color: #FFF8DC; /* Cornsilk */
+    border-color: #FFDAB9; /* PeachPuff */
+    color: #4A2C00; /* Dark brown text */
+}
+.list-group-item-action:hover, .list-group-item-action:focus {
+    background-color: #FFE4B5; /* Moccasin */
+    color: #D35400; /* Orange */
+}

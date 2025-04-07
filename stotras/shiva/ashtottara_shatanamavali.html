@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Shiva Ashtottara Shatanamavali - Hindu Devotional App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="../../css/style.css"> <!-- Link to common CSS -->
+    <style>
+        .stotra-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .stotra-title h1 {
+            margin-bottom: 0;
+            margin-right: 15px;
+        }
+        .audio-icon {
+            font-size: 1.5rem;
+            color: #D35400; /* Orange color */
+            cursor: pointer; /* Indicate it's clickable */
+        }
+        .namavali-list {
+            list-style: none;
+            padding-left: 0;
+            column-count: 2; /* Display names in two columns on wider screens */
+            column-gap: 20px;
+        }
+        .namavali-list li {
+            margin-bottom: 8px;
+            font-size: 1rem;
+            color: #4A2C00; /* Dark brown text */
+        }
+        @media (max-width: 768px) {
+            .namavali-list {
+                column-count: 1; /* Single column on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar (Using common structure) -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="../../index.html">
+            <img src="../../images/om.png" alt="Om Symbol">
+            Hindu App
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="../index.html" id="navbarDropdownStotras" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Stotras <span class="sr-only">(current)</span>
+                    </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownStotras">
+                        <a class="dropdown-item" href="../index.html#ganesha">Ganesha Stotras</a>
+                        <a class="dropdown-item" href="../lakshmi/ashtottara_shatanamavali.html">Lakshmi Devi Stotras</a> <!-- Updated Link -->
+                        <a class="dropdown-item" href="../index.html#saraswati">Saraswati Devi Stotras</a>
+                        <a class="dropdown-item" href="../index.html#durga">Durga / Devi Stotras</a>
+                        <a class="dropdown-item" href="ashtottara_shatanamavali.html">Shiva Stotras</a> <!-- Updated Link -->
+                        <a class="dropdown-item" href="../index.html#vishnu">Vishnu / Krishna Stotras</a>
+                        <a class="dropdown-item" href="../index.html#narasimha">Narasimha Stotras</a>
+                        <a class="dropdown-item" href="../index.html#subrahmanya">Subrahmanya Stotras</a>
+                        <a class="dropdown-item" href="../index.html#hanuman">Hanuman Stotras</a>
+                        <a class="dropdown-item" href="../index.html#surya">Surya Stotras</a>
+                        <a class="dropdown-item" href="../index.html#other">Other Stotras</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../../vratam/index.html" id="navbarDropdownVratam" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vratam
+                    </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownVratam">
+                        <a class="dropdown-item" href="../../vratam/index.html#vinayaka">Vinayaka Chavithi</a>
+                        <a class="dropdown-item" href="../../vratam/index.html#varalakshmi">Varalakshmi Vratam</a>
+                        <!-- Add other Vratam links -->
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../../harathi/index.html" id="navbarDropdownHarathi" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Harathi
+                    </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownHarathi">
+                        <a class="dropdown-item" href="../../harathi/index.html#ganesha">Sri Ganesha Harathi</a>
+                        <a class="dropdown-item" href="../../harathi/index.html#lakshmi">Sri Lakshmi Devi Harathi</a>
+                         <!-- Add other Harathi links -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container">
+        <div class="stotra-title">
+             <h1>🕉️ Sri Shiva 108 Ashtottara Shata Namavali</h1>
+             <i class="fas fa-play-circle audio-icon" title="Play Audio"></i> <!-- Audio Icon -->
+        </div>
+
+        <ul class="namavali-list" id="namavaliContent">
+            <li>Om Shivaya Namah</li>
+            <li>Om Maheshvaraya Namah</li>
+            <li>Om Shambhave Namah</li>
+            <li>Om Pinakine Namah</li>
+            <li>Om Shashishekharaya Namah</li>
+            <li>Om Vamadevaya Namah</li>
+            <li>Om Virupakshaya Namah</li>
+            <li>Om Kapardine Namah</li>
+            <li>Om Nilalohitaya Namah</li>
+            <li>Om Shankaraya Namah</li>
+            <li>Om Chandrapalaya Namah</li>
+            <li>Om Kapaline Namah</li>
+            <li>Om Kinnaraya Namah</li>
+            <li>Om Maheshaya Namah</li>
+            <li>Om Tripurantakaya Namah</li>
+            <li>Om Vrushankaya Namah</li>
+            <li>Om Vrushabharudhaya Namah</li>
+            <li>Om Bhasmodhulitavigrahaya Namah</li>
+            <li>Om Samapriyaya Namah</li>
+            <li>Om Svaramayaya Namah</li>
+            <li>Om Trayimurtaye Namah</li>
+            <li>Om Anishvaraya Namah</li>
+            <li>Om Sarvajnaya Namah</li>
+            <li>Om Paramatmane Namah</li>
+            <li>Om Somaya Namah</li>
+            <li>Om Somarajasekharaya Namah</li>
+            <li>Om Mahakalaya Namah</li>
+            <li>Om Krupalave Namah</li>
+            <li>Om Trilochanaya Namah</li>
+            <li>Om Vishveshvaraya Namah</li>
+            <li>Om Virabhadraya Namah</li>
+            <li>Om Gananathaya Namah</li>
+            <li>Om Prajapataye Namah</li>
+            <li>Om Hiranyaretase Namah</li>
+            <li>Om Durdharshaya Namah</li>
+            <li>Om Girishaya Namah</li>
+            <li>Om Girishaya Namah</li>
+            <li>Om Anaghaya Namah</li>
+            <li>Om Bhuvaneshaya Namah</li>
+            <li>Om Bhaktavatsalaya Namah</li>
+            <li>Om Umapataye Namah</li>
+            <li>Om Mahadevaya Namah</li>
+            <li>Om Sharvaya Namah</li>
+            <li>Om Shivatmakaya Namah</li>
+            <li>Om Bhaktahaardasamudraya Namah</li>
+            <li>Om Bhavaya Namah</li>
+            <li>Om Sharaya Namah</li>
+            <li>Om Sharvaya Namah</li>
+            <li>Om Haraye Namah</li>
+            <li>Om Haraya Namah</li>
+            <li>Om Mrityunjayaya Namah</li>
+            <li>Om Sukshmatanuve Namah</li>
+            <li>Om Jagadvandyaaya Namah</li>
+            <li>Om Jagadgurave Namah</li>
+            <li>Om Vyomakeshaya Namah</li>
+            <li>Om Mahasenajanakaya Namah</li>
+            <li>Om Charuvikramaya Namah</li>
+            <li>Om Rudraya Namah</li>
+            <li>Om Bhutapataye Namah</li>
+            <li>Om Sthanave Namah</li>
+            <li>Om Ahanisham Namah</li>
+            <li>Om Maheshvaraya Namah</li>
+            <li>Om Lokakalpanta Karakaya Namah</li>
+            <li>Om Mridaya Namah</li>
+            <li>Om Paramakarunaya Namah</li>
+            <li>Om Anantaya Namah</li>
+            <li>Om Sadanandaya Namah</li>
+            <li>Om Shikhandine Namah</li>
+            <li>Om Girishaya Namah</li>
+            <li>Om Giritrayaya Namah</li>
+            <li>Om Kshipanaya Namah</li>
+            <li>Om Khanda-parashave Namah</li>
+            <li>Om Vajrahastaya Namah</li>
+            <li>Om Vishnuvallabhaya Namah</li>
+            <li>Om Shipivishtaya Namah</li>
+            <li>Om Ambikanathaya Namah</li>
+            <li>Om Shrikanthaya Namah</li>
+            <li>Om Bhaktavatsalaya Namah</li>
+            <li>Om Bhavyaya Namah</li>
+            <li>Om Sharvaya Namah</li>
+            <li>Om Trilokeshaaya Namah</li>
+            <li>Om Shitikanthaya Namah</li>
+            <li>Om Shivapriyaya Namah</li>
+            <li>Om Ugraya Namah</li>
+            <li>Om Kapaline Namah</li>
+            <li>Om Kamaraye Namah</li>
+            <li>Om Andhakasurasudanaya Namah</li>
+            <li>Om Gangaadharay Namah</li>
+            <li>Om Lalatakshaya Namah</li>
+            <li>Om Kalakalaya Namah</li>
+            <li>Om Kripanidhaye Namah</li>
+            <li>Om Bhimaya Namah</li>
+            <li>Om Parashuhastaya Namah</li>
+            <li>Om Pashupataye Namah</li>
+            <li>Om Devaya Namah</li>
+            <li>Om Ajaaya Namah</li>
+            <li>Om Aparichchhedyaaya Namah</li>
+            <li>Om Dakshadhvaraharaya Namah</li>
+            <li>Om Haraya Namah</li>
+            <li>Om Bhaganetrabhidya Namah</li>
+            <li>Om Avyayaya Namah</li>
+            <li>Om Tejomayaya Namah</li>
+            <li>Om Dhyeyaya Namah</li>
+            <li>Om Sthiraaya Namah</li>
+            <li>Om Sthanuve Namah</li>
+            <li>Om Pramanaya Namah</li>
+            <li>Om Pramanalakshanaya Namah</li>
+            <li>Om Nirmalaya Namah</li>
+        </ul>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../js/script.js"></script> <!-- Link to common JS -->
+
+    <script>
+        const playIcon = document.querySelector('.audio-icon');
+        const namavaliList = document.getElementById('namavaliContent');
+        let isSpeaking = false;
+        let utterance = null; // To hold the utterance object
+
+        playIcon.addEventListener('click', () => {
+            if (!speechSynthesis) {
+                alert('Sorry, your browser does not support text-to-speech.');
+                return;
+            }
+
+            if (isSpeaking) {
+                // If currently speaking, stop it
+                speechSynthesis.cancel();
+                playIcon.classList.remove('fa-stop-circle');
+                playIcon.classList.add('fa-play-circle');
+                playIcon.title = 'Play Audio';
+                isSpeaking = false;
+            } else {
+                // If not speaking, start speaking
+                const names = Array.from(namavaliList.getElementsByTagName('li'))
+                                 .map(li => li.textContent.trim())
+                                 .join('. '); // Join names with a pause
+
+                if (names) {
+                    utterance = new SpeechSynthesisUtterance(names);
+                    // Optional: Configure voice, rate, pitch if needed
+                    // utterance.voice = speechSynthesis.getVoices()[/* index */];
+                    // utterance.lang = 'sa-IN'; // Example: Sanskrit (India) - check browser support
+                    utterance.rate = 0.9; // Slightly slower pace
+
+                    utterance.onstart = () => {
+                        isSpeaking = true;
+                        playIcon.classList.remove('fa-play-circle');
+                        playIcon.classList.add('fa-stop-circle');
+                        playIcon.title = 'Stop Audio';
+                    };
+
+                    utterance.onend = () => {
+                        isSpeaking = false;
+                        playIcon.classList.remove('fa-stop-circle');
+                        playIcon.classList.add('fa-play-circle');
+                        playIcon.title = 'Play Audio';
+                        utterance = null; // Clear the utterance
+                    };
+
+                    utterance.onerror = (event) => {
+                        console.error('Speech synthesis error:', event.error);
+                        isSpeaking = false;
+                        playIcon.classList.remove('fa-stop-circle');
+                        playIcon.classList.add('fa-play-circle');
+                        playIcon.title = 'Play Audio';
+                        alert('An error occurred during speech synthesis.');
+                        utterance = null; // Clear the utterance
+                    };
+
+                    speechSynthesis.speak(utterance);
+                } else {
+                    alert('Could not find the text to read.');
+                }
+            }
+        });
+
+        // Ensure speech is stopped if the user navigates away
+        window.addEventListener('beforeunload', () => {
+            if (isSpeaking) {
+                speechSynthesis.cancel();
+            }
+        });
+    </script>
+</body>
+</html>

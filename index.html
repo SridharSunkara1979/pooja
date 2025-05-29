@@ -1,114 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hindu Devotional App</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css"> <!-- Link to common CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hindu Devotional App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <h1>Hindu Devotional App</h1>
+  </header>
 
-    <!-- Top Navigation Bar -->
-    <nav class="navbar navbar-expand-lg fixed-top"> <!-- Removed navbar-light -->
-        <a class="navbar-brand" href="index.html"> <!-- Link to home -->
-            <img src="images/om.png" alt="Om Symbol"> <!-- Updated image path -->
-            Hindu App
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> <!-- Link to home -->
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStotras" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Stotras
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownStotras">
-                        <!-- Links will be updated later when individual pages are created -->
-                        <a class="dropdown-item" href="stotras/index.html#ganesha">Ganesha Stotras</a>
-                        <a class="dropdown-item" href="stotras/index.html#lakshmi">Lakshmi Devi Stotras</a>
-                        <a class="dropdown-item" href="stotras/index.html#saraswati">Saraswati Devi Stotras</a>
-                        <a class="dropdown-item" href="stotras/index.html#durga">Durga / Devi Stotras</a>
-                        <a class="dropdown-item" href="stotras/index.html#shiva">Shiva Stotras</a>
-                        <a class="dropdown-item" href="stotras/index.html#vishnu">Vishnu / Krishna Stotras</a>
-                        <a class="dropdown-item" href="stotras/index.html#narasimha">Narasimha Stotras</a>
-                        <a class="dropdown-item" href="stotras/index.html#subrahmanya">Subrahmanya Stotras</a>
-                        <a class="dropdown-item" href="stotras/index.html#hanuman">Hanuman Stotras</a>
-                        <a class="dropdown-item" href="stotras/index.html#surya">Surya Stotras</a>
-                        <a class="dropdown-item" href="stotras/index.html#other">Other Stotras</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownVratam" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Vratam
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownVratam">
-                         <!-- Links will be updated later when individual pages are created -->
-                        <a class="dropdown-item" href="vratam/index.html#vinayaka">Vinayaka Chavithi</a>
-                        <a class="dropdown-item" href="vratam/index.html#varalakshmi">Varalakshmi Vratam</a>
-                        <a class="dropdown-item" href="vratam/index.html#sankatahara">Sankatahara Chaturthi</a>
-                        <a class="dropdown-item" href="vratam/index.html#satyanarayana">Satyanarayana Vratam</a>
-                        <a class="dropdown-item" href="vratam/index.html#shani">Shani Trayodashi</a>
-                        <a class="dropdown-item" href="vratam/index.html#karthika">Karthika Deepam</a>
-                        <a class="dropdown-item" href="vratam/index.html#mangala">Mangala Gowri</a>
-                        <a class="dropdown-item" href="vratam/index.html#sravana">Sravana Somavaram</a>
-                        <a class="dropdown-item" href="vratam/index.html#anantha">Anantha Padmanabha</a>
-                        <a class="dropdown-item" href="vratam/index.html#ratha">Ratha Saptami</a>
-                        <a class="dropdown-item" href="vratam/index.html#ekadasi">Ekadasi</a>
-                        <a class="dropdown-item" href="vratam/index.html#ayyappa">Ayyappa Swamy</a>
-                        <a class="dropdown-item" href="vratam/index.html#durga-ashtami">Durga Ashtami / Navaratri</a>
-                        <a class="dropdown-item" href="vratam/index.html#nagula">Nagula Chavithi</a>
-                        <a class="dropdown-item" href="vratam/index.html#chaitra">Chaitra Navaratri</a>
-                        <a class="dropdown-item" href="vratam/index.html#tulasi">Tulasi Vratam</a>
-                        <a class="dropdown-item" href="vratam/index.html#rama-navami">Rama Navami</a>
-                        <a class="dropdown-item" href="vratam/index.html#vaikunta">Vaikunta Ekadasi</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHarathi" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Harathi
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownHarathi">
-                         <!-- Links will be updated later when individual pages are created -->
-                        <a class="dropdown-item" href="harathi/index.html#ganesha">Sri Ganesha Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#lakshmi">Sri Lakshmi Devi Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#saraswati">Sri Saraswati Devi Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#durga">Sri Durga Devi Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#gowri">Sri Gowri Devi Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#parameshwara">Sri Parameshwara Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#subrahmanya">Sri Subrahmanya Swamy Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#hanuman">Sri Hanuman Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#satyanarayana">Sri Satyanarayana Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#venkateswara">Sri Venkateswara Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#krishna">Sri Krishna Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#rama">Sri Rama Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#sai">Sri Sai Baba Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#anjaneya">Sri Anjaneya Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#navaratri">Navaratri Devi Harathis</a>
-                        <a class="dropdown-item" href="harathi/index.html#sitarama">Sri Sitarama Kalyana Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#varalakshmi">Sri Varalakshmi Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#naga">Sri Naga Devata Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#srirama-navami">Sri Srirama Navami Harathi</a>
-                        <a class="dropdown-item" href="harathi/index.html#adi-shankaracharya">Sri Adi Shankaracharya Harathi</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <nav>
+    <a href="#ashtottara">Ashtottara</a>
+    <a href="#vratam">Vratam</a>
+    <a href="#harathi">Harathi</a>
+  </nav>
 
-    <!-- Content Section -->
-    <div class="container">
-        <h1>Welcome to Hindu Devotional App</h1>
-        <p>This is a simple Hindu Devotional App created using HTML, CSS, and JavaScript.</p>
-    </div>
+  <main>
+    <section id="ashtottara">
+      <h2>Ashtottara Satanamavali</h2>
+      <ul>
+        <li>Ganesh: <a href="ashtottara/ganesh-telugu.html">Telugu</a> | <a href="ashtottara/ganesh-english.html">English</a></li>
+        <li>Lakshmi Devi: <a href="ashtottara/lakshmi-telugu.html">Telugu</a> | <a href="ashtottara/lakshmi-english.html">English</a></li>
+        <li>Saraswati Devi: <a href="#">Telugu</a> | <a href="#">English</a></li>
+        <li>Durga Devi: <a href="#">Telugu</a> | <a href="#">English</a></li>
+        <li>Siva: <a href="#">Telugu</a> | <a href="#">English</a></li>
+        <li>Vishnu: <a href="#">Telugu</a> | <a href="#">English</a></li>
+        <li>Narasimha: <a href="#">Telugu</a> | <a href="#">English</a></li>
+        <li>Subrahmanya: <a href="#">Telugu</a> | <a href="#">English</a></li>
+        <li>Hanuman: <a href="#">Telugu</a> | <a href="#">English</a></li>
+        <li>Surya: <a href="#">Telugu</a> | <a href="#">English</a></li>
+      </ul>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script> <!-- Link to common JS -->
+    <section id="vratam">
+      <h2>Vratam</h2>
+      <ul>
+        <li>Vinayaka Vratam: <a href="vratam/vinayaka-telugu.html">Telugu</a> | <a href="vratam/vinayaka-english.html">English</a></li>
+        <li>Varalakshmi Vratam: <a href="vratam/varalakshmi-telugu.html">Telugu</a> | <a href="vratam/varalakshmi-english.html">English</a></li>
+      </ul>
+    </section>
+
+    <section id="harathi">
+      <h2>Harathi</h2>
+      <ul>
+        <li>Ganesh Harathi: <a href="harathi/ganesh-telugu.html">Telugu</a> | <a href="harathi/ganesh-english.html">English</a></li>
+        <li>Lakshmi Devi Harathi: <a href="harathi/lakshmi-telugu.html">Telugu</a> | <a href="harathi/lakshmi-english.html">English</a></li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
